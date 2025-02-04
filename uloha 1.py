@@ -1,0 +1,5 @@
+a=input("zadaj hodnotu a: ")
+a=int(a)
+b=input("zadaj hodnotu b: ")
+b=int(b)
+print ("vysledok suctu je", a+b, ".")
