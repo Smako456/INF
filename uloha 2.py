@@ -1,5 +1,0 @@
-a=input("strana a: ")
-a=int(a)
-b=input("strana b: ")
-b=int(b)
-print ("Obsah obdlznika je: ", a*b, ".")
