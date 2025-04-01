@@ -1,4 +1,4 @@
-p=int(str("zadaj pohlavie bez diakritiky: "))
+p=input("zadaj pohlavie muz alebo zena: ")
 v=int(input("zadaj vek: "))
 if v<19 and p=="muz":
     print("ziak")
