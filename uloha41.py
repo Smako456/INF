@@ -1,4 +1,5 @@
+n=int(input("Zadaj n: "))
 s=0
-for i in range(1, 11):
+for i in range(1, n+1):
     s=s+i
 print("Sucete je:", s)
