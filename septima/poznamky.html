@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <titl>poznamky</titl>
+</head>
+<body>
+    <h1>Úvod do počítačových sietí</h1>
+    <h2>Počítačová sieť (angl. computer network) je sústava zariadení, ktoré sú navzájom prepojené a dokážu si vymieňať dáta (komunikovať).</h2>
+    <h3>Prenosové kanály</h3>
+    <p>Prenosové kanály slúžia na prenos dát medzi zariadeniami v sieti. 
+    <br>Môžu byť vedené (drôtové) alebo nevedené (bezdrôtové). 
+    <br>Vedené prenosové kanály: krútená dvojlinka, koaxiálny kábel, optické vlákno. 
+    <br>Nevedené prenosové kanály: rádio (Wi-Fi), mikrovlny, satelitný prenos, infračervené žiarenie.</p>
+    <h3>1️. Podľa rozlohy (vzdialenosti prepojených počítačov)</h3>
+        <h4>LAN (Local Area Network) – lokálna sieť, obmedzená na jednu budovu alebo areál (škola, firma).</h4>
+        <h4>MAN (Metropolitan Area Network) – mestská sieť, spája viaceré lokálne siete v rámci mesta.</h4>
+        <h4>WAN (Wide Area Network) – globálna sieť, prepája siete vo veľkých geografických oblastiach (napr. internet).</h4>
+        <h4>PAN (Personal Area Network) – osobná sieť, prepojenie zariadení v malom dosahu (Bluetooth, USB).</h4>
+    <h3>2️⃣ Podľa topológie (ako sú zariadenia pospájané)</h3>
+        <p>Zbernicová (bus)
+        Všetky zariadenia sú pripojené na jeden kábel. Ak sa kábel pokazí, celá sieť prestane fungovať. Dnes sa takmer nepoužíva.
+ 
+        PC1 ——— PC2 ——— PC3 ——— PC4
+ 
+        Hviezdicová (star)
+        Všetky zariadenia sú pripojené do centrálneho bodu. Ak zariadenie prestane fungovať, sieť ako celok beží ďalej.
+        
+                PC1          
+                |           
+        PC2 ——— Router ——— PC3
+                |           
+                PC4          
+        
+        Kruhová (ring)
+        Zariadenia sú spojené do kruhu a dáta sa posielajú dokola. Dnes málo používaná.
+        
+        PC1 — PC2
+        |       |
+        PC4 — PC3
+        
+        Stromová (tree)
+        Sieť pripomína rodokmeň – menšie podsiete sa spájajú do väčších celkov.
+        
+                Router           
+                /        \         
+            Switch1    Switch2     
+            /   \          \       
+        PC1    PC2         PC3   
+        
+        Sieťová (mesh)
+        Každé zariadenie je prepojené s viacerými ďalšími zariadeniami. Veľká spoľahlivosť – sieť funguje aj pri poruche niektorých spojení.
+        
+        PC1 ——— PC2
+        | \    / | 
+        |   PC3  | 
+        | /    \ | 
+        PC4 ——— PC5</p>
+    <h3>3️⃣ Podľa prístupového režimu</h3>
+        <h4>Peer-to-Peer (P2P) </h4>
+        <p>V tomto type siete majú všetky zariadenia rovnaké postavenie.
+        Každé zariadenie môže zároveň vystupovať ako poskytovateľ aj spotrebiteľ zdrojov.
+        Typické využitie: torrentové siete, Bluetooth prenos medzi zariadeniami.</p>
+        <h4>Klient-Server</h4> 
+        <p>Sieť je organizovaná hierarchicky – existuje server, ktorý poskytuje služby a zdroje, a klienti, ktorí tieto služby využívajú.
+        Klienti posielajú požiadavky, server ich spracúva a vracia výsledok.
+        Typické využitie: Na škole je server, ktorý spravuje prihlasovanie študentov do PC učebne. Študent (klient) sa prihlási, server overí jeho meno a heslo (autentifikácia) a povolí prístup.</p>
+    
+    <h3>Pasívne sieťové prvky</h3>
+        <p>Slúžia na vedenie, ukončenie, rozdeľovanie, spájanie signálu. Nepotrebujú elektrinu (napájanie).
+        Môžeme si ich predstaviť ako „káble a spojky“, ktoré spájajú jednotlivé zariadenia.
+
+        Príklady: káble (UTP, FTP, optické vlákna), zásuvky, konektory (RJ-45, SC, LC), rozvádzače.</p>
+    <h3>Aktívne sieťové prvky</h3>
+        <p>zariadenia už potrebujú elektrinu, pretože so signálom aktívne pracujú – zosilňujú ho, posielajú správnym smerom alebo kontrolujú prenos dát.
+        Príklady: 
+        Hub (rozbočovač) – zariadenie, ktoré posiela dáta všetkým portom.
+        Switch (prepínač) – prepína dáta len k cieľovému zariadeniu.
+        Router (smerovač) – prepája rôzne siete a rozhoduje o ceste dát.
+        Access point (AP) – umožňuje bezdrôtové pripojenie zariadení do siete.
+        Firewall – kontroluje a filtruje sieťovú komunikáciu podľa pravidiel.</p>
+    </body>
+</html>
